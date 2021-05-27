@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../App.css';
 
-export default function ReverseString({text}) {
-    const [sourceString, setSourceString] = useState(text);
-
+export default function ReverseString({sourceString}) {
     function getReverseString() {
-        return sourceString.split('').reverse().join('');
+        return [...sourceString].reverse().join('');
     }
 
     return (

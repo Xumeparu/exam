@@ -10,7 +10,7 @@ export default function App() {
         <Like />
         <Timer />
         <Fibonacci />
-        <ReverseString text='meow'/>
+        <ReverseString sourceString='meow'/>
       </>
 );
 }
