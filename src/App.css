@@ -1,7 +1,9 @@
-div {
+body {
   font-family: 'Consolas', serif;
   font-size: 20pt;
+}
 
+div {
   margin: 10px;
 }
 
@@ -28,4 +30,12 @@ h4 {
 
 .red {
   color: #f81d1d;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+
+  border-style: solid;
+  border-color: #000000;
 }
