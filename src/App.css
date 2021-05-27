@@ -1,13 +1,24 @@
 div {
   font-family: 'Consolas', serif;
-  font-size: 24pt;
-  margin-left: 2%;
+  font-size: 20pt;
+
+  margin: 10px;
+}
+
+.block {
+  border-style: solid;
+  padding: 1%;
+}
+
+h4 {
+  color: #535353;
 }
 
 .heart {
   height: 100px;
   width: 100px;
 
+  font-family: 'Contra', serif;
   font-size: 50pt;
 }
 

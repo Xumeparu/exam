@@ -18,8 +18,8 @@ export default function Like() {
     }
 
     return(
-        <div>
-            <h4>Like</h4>
+        <div className='block'>
+            <h4>1. Like</h4>
             <div className={'heart ' + colour} onClick={changeColour}>{state}</div>
         </div>
     );

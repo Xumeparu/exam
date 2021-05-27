@@ -6,10 +6,10 @@ export default function Timer() {
 
     useEffect(() => {
         let remainingTime = seconds;
-        let timerId = 0;
+        let timer = 0;
 
         if (seconds) {
-            timerId = setInterval(() => {
+            timer = setInterval(() => {
                 if (remainingTime > 0) {
                     remainingTime--;
                     setSeconds(remainingTime);
@@ -17,13 +17,13 @@ export default function Timer() {
             }, 1000);
         }
         return () => {
-            clearInterval(timerId);
+            clearInterval(timer);
         };
     }, []);
 
     return (
-        <div>
-            <h4>Timer</h4>
+        <div className='block'>
+            <h4>2. Timer</h4>
             <div>{seconds}</div>
         </div>
     );
