@@ -1,8 +1,6 @@
-body {
-  text-align: center;
-}
-
 div {
+  font-family: 'Consolas', serif;
+  font-size: 24pt;
   margin-left: 2%;
 }
 

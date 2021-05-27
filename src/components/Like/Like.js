@@ -1,10 +1,10 @@
-import React from 'react';
-import '../App.css';
+import React, { useState } from 'react';
+import '../../App.css';
 
 export default function Like() {
     const state = '♥';
-    const [flag, setFlag] = React.useState(false);
-    const [colour, setColour] = React.useState('black');
+    const [flag, setFlag] = useState(false);
+    const [colour, setColour] = useState('black');
 
     function changeColour() {
         if (flag) {
@@ -19,7 +19,7 @@ export default function Like() {
 
     return(
         <div>
-            <h1>Like</h1>
+            <h4>Like</h4>
             <div className={'heart ' + colour} onClick={changeColour}>{state}</div>
         </div>
     );
