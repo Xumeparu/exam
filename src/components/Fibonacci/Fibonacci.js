@@ -18,9 +18,9 @@ export default function Fibonacci() {
     }, [numbers]);
 
     return (
-      <div className='block'>
-          <h4>3. Fibonacci</h4>
-          <div>{numbers.join(" ")}</div>
-      </div>
+        <div className='block'>
+            <h4>3. Fibonacci</h4>
+            <div>{numbers.join(" ")}</div>
+        </div>
     );
 }

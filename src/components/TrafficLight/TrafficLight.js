@@ -39,7 +39,7 @@ export default function TrafficLight() {
     return (
         <div className='block'>
             <h4>8. Traffic light</h4>
-            <div className={'lamp ' + (light ===  lights.RED ? 'redLight' : '')} />
+            <div className={'lamp ' + (light === lights.RED ? 'redLight' : '')} />
             <div className={'lamp ' + (light === lights.YELLOW || light === lights.YELLOW_GREEN ? 'yellowLight' : '')} />
             <div className={'lamp ' + (light === lights.GREEN ? 'greenLight' : '')} />
         </div>
