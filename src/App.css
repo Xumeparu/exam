@@ -49,3 +49,15 @@ button {
 
   background-color: #ffffff;
 }
+
+.zeroTemp {
+  color: #000000;
+}
+
+.coldTemp {
+  color: #3b4b90;
+}
+
+.hotTemp {
+  color: #e72d2d;
+}
