@@ -6,6 +6,7 @@ import ReverseString from './components/ReverseString/ReverseString';
 import Alert from './components/Alert/Alert';
 import ReverseStringWithButton from './components/ReverseStringWithButton/ReverseStringWithButton';
 import Thermometer from './components/Thermometer/Thermometer';
+import TrafficLight from './components/TrafficLight/TrafficLight';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Alert text='Я скоро спрячусь' delay={5}/>
           <ReverseStringWithButton text='Pain'/>
           <Thermometer temperature={-19}/>
+          <TrafficLight />
       </>
 );
 }

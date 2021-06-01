@@ -59,5 +59,26 @@ button {
 }
 
 .hotTemp {
-  color: #e72d2d;
+  color: #f81d1d;
+}
+
+.lamp {
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+
+  background-color: #393939;
+}
+
+.redLight {
+  background-color: #f81d1d;
+}
+
+.yellowLight {
+  background-color: #f8a01d;
+}
+
+.greenLight {
+  background-color: #39a028;
 }
