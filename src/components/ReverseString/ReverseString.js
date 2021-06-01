@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 
-export default function ReverseString({sourceString}) {
+export default function ReverseString({ sourceString }) {
     function getReverseString() {
         return [...sourceString].reverse().join('');
     }

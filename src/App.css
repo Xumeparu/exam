@@ -39,3 +39,13 @@ input {
   border-style: solid;
   border-color: #000000;
 }
+
+button {
+  height: 30px;
+  width: 200px;
+
+  border-style: solid;
+  border-color: #000000;
+
+  background-color: #ffffff;
+}

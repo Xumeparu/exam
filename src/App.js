@@ -4,6 +4,7 @@ import Timer from './components/Timer/Timer';
 import Fibonacci from './components/Fibonacci/Fibonacci';
 import ReverseString from './components/ReverseString/ReverseString';
 import Alert from './components/Alert/Alert';
+import ReverseStringWithButton from './components/ReverseStringWithButton/ReverseStringWithButton';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Fibonacci />
         <ReverseString sourceString='meow'/>
         <Alert text='Я скоро спрячусь' delay={5}/>
+        <ReverseStringWithButton text='Pain'/>
       </>
 );
 }
