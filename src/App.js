@@ -8,19 +8,23 @@ import ReverseStringWithButton from './components/ReverseStringWithButton/Revers
 import Thermometer from './components/Thermometer/Thermometer';
 import TrafficLight from './components/TrafficLight/TrafficLight';
 import Counter from './components/Counter/Counter';
+import VariableStepCounter from './components/VariableStepCounter/VariableStepCounter';
+import SuperCounter from "./components/SuperCounter/SuperCounter";
 
 export default function App() {
-  return (
-      <>
-          <Like />
-          <Timer />
-          <Fibonacci />
-          <ReverseString sourceString='meow'/>
-          <Alert text='Я скоро спрячусь' delay={5}/>
-          <ReverseStringWithButton text='Pain'/>
-          <Thermometer temperature={-19}/>
-          <TrafficLight />
-          <Counter />
-      </>
-);
+    return (
+        <>
+            <Like />
+            <Timer />
+            <Fibonacci />
+            <ReverseString sourceString='meow'/>
+            <Alert text='Я скоро спрячусь' delay={5}/>
+            <ReverseStringWithButton text='Pain'/>
+            <Thermometer temperature={-19}/>
+            <TrafficLight />
+            <Counter />
+            <VariableStepCounter />
+            <SuperCounter />
+        </>
+    );
 }

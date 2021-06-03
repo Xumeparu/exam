@@ -82,3 +82,8 @@ button {
 .greenLight {
   background-color: #39a028;
 }
+
+.count {
+  height: 30px;
+  width: 30px;
+}

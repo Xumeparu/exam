@@ -11,10 +11,10 @@ export default function Thermometer({ temperature }) {
         if (temperature === 0) {
             return temps.ZERO;
         }
-        else if (temperature > 0) {
+        if (temperature > 0) {
             return temps.HOT;
         }
-        else if (temperature < 0) {
+        if (temperature < 0) {
             return temps.COLD;
         }
     }
