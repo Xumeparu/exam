@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 
 export default function VariableStepCounter() {
     const [count, setCount] = useState(0);
-    let step = 1;
+    const [step, setStep] = useState(0);
+
+    function changeHandler(e) {
+        setStep(e.target.value);
+    }
 
     return (
         <div className='block'>
             <h4>10. Variable step counter</h4>
-            <label>Текущее значение: {count}</label>
-            &nbsp;
-            <button className='count' onClick={() => setCount(step => step + 1)}>+</button>
-            <label><input type='range' value={step}/>{step}</label>
-            &nbsp;
+            <div>
+                <label>Текущее значение: {count}</label>&nbsp;
+                <button className='count' onClick={() => setCount(count => count + Number(step))}>+</button>
+            </div>
+            <div>
+                <label>Увеличивать каждый раз на: {step}</label>
+            </div>
+            <div>
+                <input type='range' value={step} min="-50" max="50" onChange={(e) => changeHandler(e)}/>
+            </div>
         </div>
     );
 }
