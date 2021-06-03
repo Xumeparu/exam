@@ -9,7 +9,8 @@ import Thermometer from './components/Thermometer/Thermometer';
 import TrafficLight from './components/TrafficLight/TrafficLight';
 import Counter from './components/Counter/Counter';
 import VariableStepCounter from './components/VariableStepCounter/VariableStepCounter';
-import SuperCounter from "./components/SuperCounter/SuperCounter";
+import SuperCounter from './components/SuperCounter/SuperCounter';
+import Selectbox from './components/Selectbox/SelectBox';
 
 export default function App() {
     return (
@@ -25,6 +26,7 @@ export default function App() {
             <Counter />
             <VariableStepCounter />
             <SuperCounter />
+            <Selectbox options={['meow', 'woof', 'bark']} onSelect={value => console.log(value)} />
         </>
     );
 }
