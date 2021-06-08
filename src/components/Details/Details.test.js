@@ -1,14 +1,13 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Details from './Details';
 
-test('', () => {
+test('Тестирование компонента Details', () => {
     const shortText = 'Лицензионное соглашение';
     const text = 'Настоящее соглашение дает вам нижеследующие права';
 
     render(<Details shortText={shortText} text={text} />);
 
     const link = screen.getByTestId('link');
-
     expect(screen.getByText(shortText)).toBeInTheDocument();
     expect(screen.queryByText(text)).toBeNull();
 

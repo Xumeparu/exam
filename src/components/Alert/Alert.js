@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Alert({ text, delay }) {
-    const [message, setMessage] = useState(text);
+    const [isShow, setIsShow] = useState(true);
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setMessage('');
-        }, delay*1000);
+            setIsShow(false);
+        }, delay * 1000);
         return () => {
             clearInterval(timer);
         };
@@ -15,7 +15,7 @@ export default function Alert({ text, delay }) {
     return (
         <div className='block'>
             <h4>5. Alert</h4>
-            <label>{message}</label>
+            {isShow && <label data-testid='text'>{text}</label>}
         </div>
     );
 }
