@@ -88,6 +88,12 @@ button {
   width: 30px;
 }
 
+select {
+  height: 30px;
+  width: 200px;
+  border: solid 2px;
+}
+
 .link {
   color: #3b4b90;
 }
