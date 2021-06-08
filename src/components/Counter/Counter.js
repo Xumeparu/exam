@@ -7,7 +7,6 @@ export default function Counter() {
         <div className='block'>
             <h4>9. Counter</h4>
             <button onClick={() => setCount(count => count + 1)}>Не нажимать</button>
-            &nbsp;
             <label>Количество нажатий: {count}</label>
         </div>
     );

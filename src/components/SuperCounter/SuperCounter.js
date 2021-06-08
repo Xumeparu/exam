@@ -24,10 +24,10 @@ export default function SuperCounter() {
     return (
         <div className='block'>
             <h4>* Super counter</h4>
-            <button onClick={() => changeHandler(false)}>-</button>
-            &nbsp;{step}&nbsp;
-            <button onClick={() => changeHandler(true)}>+</button>
-            &nbsp;{count}
+            <button className='count' onClick={() => changeHandler(false)}>-</button>
+            {step}
+            <button className='count' onClick={() => changeHandler(true)}>+</button>
+            {count}
         </div>
     );
 }

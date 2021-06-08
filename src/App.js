@@ -12,6 +12,7 @@ import VariableStepCounter from './components/VariableStepCounter/VariableStepCo
 import SuperCounter from './components/SuperCounter/SuperCounter';
 import Selectbox from './components/Selectbox/SelectBox';
 import Details from './components/Details/Details';
+import ItemGetter from './components/ItemGetter/ItemGetter';
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
             <SuperCounter />
             <Selectbox options={['meow', 'woof', 'bark']} onSelect={value => console.log(value)} />
             <Details shortText="Лицензионное соглашение" text="Настоящее соглашение дает вам нижеследующие права..." />
+            <ItemGetter />
         </>
     );
 }

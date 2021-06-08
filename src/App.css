@@ -33,21 +33,36 @@ h4 {
 }
 
 input {
+  font-family: 'Consolas', serif;
+  font-size: 14pt;
+  text-align: center;
+
   height: 30px;
   width: 200px;
 
   border-style: solid;
   border-color: #000000;
+
+  margin: 1%;
 }
 
 button {
-  height: 30px;
+  font-family: 'Consolas', serif;
+  font-size: 14pt;
+
+  height: 36px;
   width: 200px;
 
   border-style: solid;
   border-color: #000000;
 
   background-color: #ffffff;
+
+  margin: 1%;
+}
+
+span {
+  margin: 1%;
 }
 
 .zeroTemp {

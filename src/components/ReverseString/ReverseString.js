@@ -12,7 +12,6 @@ export default function ReverseString({ sourceString }) {
             <label>
                 <input type='text' value={sourceString} readOnly={true} />
             </label>
-            &nbsp;
             <label>
                 <input type='text' value={getReverseString()} readOnly={true} />
             </label>
