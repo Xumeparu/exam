@@ -22,7 +22,7 @@ export default function Thermometer({ temperature }) {
     return (
         <div className='block'>
             <h4>7. Thermometer</h4>
-            <label className={changeTempColour()}>{temperature}</label>
+            <label className={changeTempColour()} data-testid='tempLabel'>{temperature}</label>
         </div>
     );
 }

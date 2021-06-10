@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../App.css';
 
 export default function Like() {
-    const state = '♥';
+    const heart = '♥';
     const [flag, setFlag] = useState(false);
     const [colour, setColour] = useState('black');
 
@@ -20,7 +20,7 @@ export default function Like() {
     return(
         <div className='block'>
             <h4>1. Like</h4>
-            <div className={'heart ' + colour} onClick={changeColour}>{state}</div>
+            <div className={'heart ' + colour} onClick={changeColour} data-testid='heart'>{heart}</div>
         </div>
     );
 }

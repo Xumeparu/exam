@@ -10,10 +10,10 @@ export default function ReverseString({ sourceString }) {
         <div className='block'>
             <h4>4. Reverse string</h4>
             <label>
-                <input type='text' value={sourceString} readOnly={true} />
+                <input type='text' value={sourceString} data-testid='sourceString' readOnly={true} />
             </label>
             <label>
-                <input type='text' value={getReverseString()} readOnly={true} />
+                <input type='text' value={getReverseString()} data-testid='reverseString' readOnly={true} />
             </label>
         </div>
     );
