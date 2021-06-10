@@ -34,5 +34,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/reportWebVitals",
+      "src/App",
+      "src/index"
+    ]
   }
 }
