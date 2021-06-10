@@ -1,12 +1,41 @@
 import { render, screen } from '@testing-library/react';
 import Thermometer from './Thermometer';
 
-test('Тестирование компонента Thermometer', () => {
-    const temperature = 19;
+const temps = {
+    ZERO: 'zeroTemp',
+    HOT: 'hotTemp',
+    COLD: 'coldTemp'
+}
 
-    render(<Thermometer temperature={temperature}/>);
+describe('Тестирование компонента Thermometer', () => {
+    test('Температура 0', () => {
+        const temperature = 0;
 
-    const tempLabel = screen.getByTestId('tempLabel');
+        render(<Thermometer temperature={temperature}/>);
 
-    expect(tempLabel).toBeInTheDocument();
-});
+        const tempLabel = screen.getByTestId('tempLabel');
+        expect(tempLabel).toBeInTheDocument();
+        expect(tempLabel.className).toBe(temps.ZERO);
+    });
+
+    test('Температура отрицательная', () => {
+        const temperature = -19;
+
+        render(<Thermometer temperature={temperature}/>);
+
+        const tempLabel = screen.getByTestId('tempLabel');
+        expect(tempLabel).toBeInTheDocument();
+        expect(tempLabel.className).toBe(temps.COLD);
+    });
+
+    test('Температура положительная', () => {
+        const temperature = 50;
+
+        render(<Thermometer temperature={temperature}/>);
+
+        const tempLabel = screen.getByTestId('tempLabel');
+        expect(tempLabel).toBeInTheDocument();
+        expect(tempLabel.className).toBe(temps.HOT);
+    });
+})
+

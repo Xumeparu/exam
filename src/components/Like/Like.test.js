@@ -1,7 +1,7 @@
 import {act, fireEvent, render, screen} from '@testing-library/react';
 import Like from './Like';
 
-test('Тестирование компонента Heart', () => {
+test('Тестирование компонента Like', () => {
     render(<Like />);
 
     const heart = screen.getByTestId('heart');

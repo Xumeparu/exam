@@ -8,15 +8,13 @@ export default function Thermometer({ temperature }) {
     }
 
     function changeTempColour() {
-        if (temperature === 0) {
-            return temps.ZERO;
+        if (temperature < 0) {
+            return temps.COLD;
         }
         if (temperature > 0) {
             return temps.HOT;
         }
-        if (temperature < 0) {
-            return temps.COLD;
-        }
+        return temps.ZERO;
     }
 
     return (
