@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import style from './TrafficLight.module.css';
 
 export default function TrafficLight() {
     const lights = {
@@ -39,9 +40,9 @@ export default function TrafficLight() {
     return (
         <div className='block'>
             <h4>8. Traffic light</h4>
-            <div className={'lamp ' + (light === lights.RED ? 'redLight' : '')} />
-            <div className={'lamp ' + (light === lights.YELLOW || light === lights.YELLOW_GREEN ? 'yellowLight' : '')} />
-            <div className={'lamp ' + (light === lights.GREEN ? 'greenLight' : '')} />
+            <div className={`${style.lamp} ${light === lights.RED ? style.redLight : ''}`} data-testid='upperLamp' />
+            <div className={`${style.lamp} ${light === lights.YELLOW || light === lights.YELLOW_GREEN ? style.yellowLight : ''}`} data-testid='middleLamp' />
+            <div className={`${style.lamp} ${light === lights.GREEN ? style.greenLight : ''}`} data-testid='bottomLamp' />
         </div>
     );
 }
