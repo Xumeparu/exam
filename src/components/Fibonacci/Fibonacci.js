@@ -20,7 +20,7 @@ export default function Fibonacci() {
     return (
         <div className='block'>
             <h4>3. Fibonacci</h4>
-            <div data-test-id='numbers'>{numbers.join(" ")}</div>
+            <div data-test-id='numbers'>{numbers.join(' ')}</div>
         </div>
     );
 }
