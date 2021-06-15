@@ -24,7 +24,7 @@ export default function Timer() {
     return (
         <div className='block'>
             <h4>2. Timer</h4>
-            <div>{seconds}</div>
+            <span data-testid='secondsItem'>{seconds}</span>
         </div>
     );
 }
