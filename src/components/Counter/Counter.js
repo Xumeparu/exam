@@ -7,7 +7,7 @@ export default function Counter() {
         <div className='block'>
             <h4>9. Counter</h4>
             <button onClick={() => setCount(count => count + 1)} data-testid='countBtn'>Не нажимать</button>
-            <label>Количество нажатий: {count}</label>
+            <span data-testid='countItem'>Количество нажатий: {count}</span>
         </div>
     );
 }
