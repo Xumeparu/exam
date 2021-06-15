@@ -10,7 +10,7 @@ export default function ReverseStringWithButton({ text }) {
     return (
         <div className='block'>
             <h4>6. Reverse string with button</h4>
-            <label data-testid='sourceString'>{reverseString}</label>
+            <label data-testid='reverseItem'>{reverseString}</label>
             <button onClick={getReverseString} data-testid='flipBtn'>Перевернуть</button>
         </div>
     );

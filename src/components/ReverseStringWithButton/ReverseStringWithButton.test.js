@@ -7,11 +7,14 @@ test('Тестирование компонента ReverseStringWithButton', ()
 
     render(<ReverseStringWithButton text={text} />)
 
+    const reverseItem = screen.getByTestId('reverseItem');
     const flipBtn = screen.getByTestId('flipBtn');
-    expect(screen.getByText(text)).toBeInTheDocument();
+
+    expect(reverseItem).toBeInTheDocument();
+    expect(reverseItem).toHaveTextContent(text);
     expect(flipBtn).toBeInTheDocument();
 
     fireEvent.click(flipBtn);
 
-    expect(screen.getByText(reverseText)).toBeInTheDocument();
+    expect(reverseItem).toHaveTextContent(reverseText);
 });
