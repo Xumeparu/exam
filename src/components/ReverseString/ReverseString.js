@@ -1,20 +1,15 @@
 import React from 'react';
 import '../../App.css';
 
-export default function ReverseString({ sourceString }) {
+export default function ReverseString({ text }) {
     function getReverseString() {
-        return [...sourceString].reverse().join('');
+        return [...text].reverse().join('');
     }
 
     return (
         <div className='block'>
             <h4>4. Reverse string</h4>
-            <label>
-                <input type='text' value={sourceString} data-testid='sourceString' readOnly={true} />
-            </label>
-            <label>
-                <input type='text' value={getReverseString()} data-testid='reverseString' readOnly={true} />
-            </label>
+            <span data-testid='reverseItem'>{getReverseString()} </span>
         </div>
     );
 }

@@ -3,12 +3,12 @@ import ReverseString from './ReverseString';
 
 test('Тестирование компонента ReverseString', () => {
     const text = 'meow';
+    const reverseText = 'woem';
 
-    render(<ReverseString sourceString={text}/>);
+    render(<ReverseString text={text}/>);
 
-    const sourceString = screen.getByTestId('sourceString');
-    const reverseString = screen.getByTestId('reverseString');
+    const reverseItem = screen.getByTestId('reverseItem');
 
-    expect(sourceString).toBeInTheDocument();
-    expect(reverseString).toBeInTheDocument();
+    expect(reverseItem).toBeInTheDocument();
+    expect(reverseItem).toHaveTextContent(reverseText);
 });

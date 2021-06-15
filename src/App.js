@@ -20,7 +20,7 @@ export default function App() {
             <Like />
             <Timer />
             <Fibonacci />
-            <ReverseString sourceString='meow'/>
+            <ReverseString text='meow'/>
             <Alert text='Я скоро спрячусь' delay={5}/>
             <ReverseStringWithButton text='Pain'/>
             <Thermometer temperature={-19}/>
